@@ -54,13 +54,6 @@ class App extends Component {
     return ary.sort(() => Math.random() - 0.5);
   }
 
-  componentDidUpdate() {
-   /*j if (this.message.length > 1) {
-      alert("didupdate:" + this.message);
-      this.message = "";
-    } */
-  }
-
   handleClick = (num) => {
     if (this.state.chosen.indexOf(num) === -1) {
       // if the score is 15 and it got here it must be perfect!
@@ -81,7 +74,6 @@ class App extends Component {
       this.message = "You lost!  Playing again...";
     }
 
-    console.log('chosenlist=' + this.state.chosen);
   }
 
   render() {
