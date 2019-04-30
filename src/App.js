@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
 import Tiles from './components/Tiles'
-
+// yuk! these imports were required to get 
+//  webpack to include the pictures
+import pic0 from './pics/number-0-small.jpg';
+import pic1 from './pics/number-1-small.jpg';
+import pic2 from './pics/number-2-small.jpg';
+import pic3 from './pics/number-3-small.jpg';
+import pic4 from './pics/number-4-small.jpg';
+import pic5 from './pics/number-5-small.jpg';
+import pic6 from './pics/number-6-small.jpg';
+import pic7 from './pics/number-7-small.jpg';
+import pic8 from './pics/number-8-small.jpg';
+import pic9 from './pics/number-9-small.jpg';
+import picl from './pics/letter-l-small.jpg';
+import picb from './pics/letter-b-small.jpg';
+import pici from './pics/letter-i-small.jpg';
+import picp from './pics/letter-p-small.jpg';
+import picz from './pics/letter-z-small.jpg';
 
 class App extends Component {
   state = { score: 0, chosen: [] }
@@ -10,23 +26,21 @@ class App extends Component {
     this.message = "";
     this.boxes = [];
     this.randary = [];
-    let base = "../images/";
-    this.boxes.push(base + "number-0-small.jpg");
-    this.boxes.push(base + "number-1-small.jpg");
-    this.boxes.push(base + "number-2-small.jpg");
-    this.boxes.push(base + "number-3-small.jpg");
-    this.boxes.push(base + "number-4-small.jpg");
-    this.boxes.push(base + "number-5-small.jpg");
-    this.boxes.push(base + "number-6-small.jpg");
-    this.boxes.push(base + "number-7-small.jpg");
-    this.boxes.push(base + "number-8-small.jpg");
-    this.boxes.push(base + "number-9-small.jpg");
-    this.boxes.push(base + "letter-L-small.jpg");
-    this.boxes.push(base + "letter-b-small.jpg");
-    this.boxes.push(base + "letter-c-small.jpg");
-    this.boxes.push(base + "letter-i-small.jpg");
-    this.boxes.push(base + "letter-p-small.jpg");
-    this.boxes.push(base + "letter-z-small.jpg");
+    this.boxes.push(pic0);
+    this.boxes.push(pic1);
+    this.boxes.push(pic2);
+    this.boxes.push(pic3);
+    this.boxes.push(pic4);
+    this.boxes.push(pic5);
+    this.boxes.push(pic6);
+    this.boxes.push(pic7);
+    this.boxes.push(pic8);
+    this.boxes.push(pic9);
+    this.boxes.push(picl);
+    this.boxes.push(picb);
+    this.boxes.push(pici);
+    this.boxes.push(picp);
+    this.boxes.push(picz);
     this.randarray = this.get_randoms();
 
   }
@@ -79,7 +93,6 @@ class App extends Component {
         <div className='jumbotron'>
           <h1>Clicky game</h1>
           <h5> Try to click all of the images without selecting the same one twice!</h5>
-          <h5>only super spart people are able to solve this memory game!</h5>
           <h2>score: {this.state.score} </h2>
         </div>
 
