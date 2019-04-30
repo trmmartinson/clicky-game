@@ -13,7 +13,7 @@ import pic6 from './pics/number-6-small.jpg';
 import pic7 from './pics/number-7-small.jpg';
 import pic8 from './pics/number-8-small.jpg';
 import pic9 from './pics/number-9-small.jpg';
-import picl from './pics/letter-l-small.jpg';
+import picl from './pics/letter-L-small.jpg';
 import picb from './pics/letter-b-small.jpg';
 import pici from './pics/letter-i-small.jpg';
 import picp from './pics/letter-p-small.jpg';
